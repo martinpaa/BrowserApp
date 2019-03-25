@@ -16,8 +16,6 @@ class MainActivity : AppCompatActivity() {
 
         val uriPath =  intent.dataString
 
-        intent = Intent(Intent.ACTION_WEB_SEARCH)
-        intent.putExtra(SearchManager.QUERY,uriPath)
-        startActivity(intent)
+        main_webView.loadUrl(uriPath);
     }
 }
